@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro" , sans-serif;
+    background-color: #d6d9dd;
+}
+.wrapper{
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+#overflow{
+    overflow: hidden;
+}
+header{
+    background-color: white;
+    border-bottom: 2px solid #ffbe00;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+header nav{
+    float: right;
+}
+header img {
+    display: block;
+    width: 150px;
+    margin-top: 5px;
+    padding: 5px 0;
+    float: left;
+}
+header nav a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #292929;
+    float: left;
+    padding: 20px 15px;
+    font-size: 16px;
+}
+header nav a:hover{
+    color: white;
+    transition: 0.5s;
+    background-color: #ffbe00;
+}
+main{
+    position: relative;
+    top: 100px;
+}
+section article:first-child{
+    background-color: #FFBE00;
+    padding: 20px 1.5%;
+    width: 97%;
+}
+section article:first-child h4{
+    text-transform: capitalize;
+    display: inline;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+section article{
+    padding: 15px 1.5%;
+    border: 0.5px solid lightgray;
+    background-color: white;
+}
+section img{
+    width: 30%;
+    float: left;
+}
+section h1, section p{
+    float: left;
+    width: 64%;
+    margin: 0;
+}
+section h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 1.5% 10px 1.5%;
+}
+section h1 a{
+    text-decoration: none;
+    color: #303030;
+}
+section h1 a:hover{
+    color: #FFBE00;
+    transition: 1s;
+}
+section p{
+    padding: 5px 1.5% 1.5% 1.5%;
+    color: #303030;
+}
+main section:nth-child(2){
+    margin-top: 20px;
+
+}
+footer{
+    background-color: #62676d;
+    margin-top: 120px;
+    color: lightgray;
+    padding: 40px 0;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+}
+footer p:nth-child(3){
+    margin-top: 40px;
+}
+footer p:nth-child(2){
+    margin-top: 10px;
+}
+/* unos.html, administracija.php, registracija.html*/
+.news, .registration, .login, .feedback{
+    position: relative;
+    top: 60px;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 40px;
+    padding: 5%;
+    color: #303030;
+    width: 90%;
+}
+.news i, .registration i, .login i, .administration i{
+    font-size: 150px;
+    display: block;
+}
+.news h1, .registration h1, .login h1, .administration h1{
+    font-size: 50px;
+}
+.news i, .news h1, .registration h1, .registration i, .login i, .login h1, .administration i, .administration h1{
+    color: #FFBE00;
+    text-align: center;
+}
+.news input:not(input[type="checkbox"]), .news textarea, .news select, .registration input, .administration input:not(input[type="checkbox"]), .administration textarea, .login input{
+    width: 96%;
+    border: 1px solid #FFBE00;
+    padding: 10px 2%;
+    margin-top: 10px;
+    font-family: "Source Sans Pro" , sans-serif;
+}
+.news label, .administration label, .login label{
+    color: #3d3d3d;
+}
+.news select, .administration select{
+    width: 100%;
+}
+.news option{
+    text-indent: 5px;
+}
+.news input[type="submit"], .registration input[type="submit"], .administration input[type="submit"], .login input[type="submit"]{
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    background-color: #FFBE00;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+.news input[type="file"], .administration input[type="file"]{
+    border: 0px !important;
+}
+.news label[for="checkbox"], .administration label[for="checkbox"]{
+    color: #62676d;
+}
+form span{
+    color: red;
+}
+.administration button{
+    background-color: #FFBE00;
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.administration button:hover{
+    font-size: 15px;
+    transition: 1s;
+}
+/* clanak.php */
+.article{
+    background-color: white;
+    width: 96%;
+    padding: 2% 2% 200px 2%;
+    color: #303030;
+}
+.article h1{
+    margin: 0;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.article h1::first-letter{
+    text-transform: uppercase;
+}
+.article-wrapper{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.article span{
+    color: #62676d;
+}
+#article-image{
+    width: 100%;
+    padding: 40px 0;
+}
+.info {
+    display: block;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 700px;
+}
+.info p {
+    text-align: center;
+    color: #FFBE00;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* responsive layout */
+@media screen and (max-width: 1070px) {
+    .wrapper {
+        max-width: 88%;
+    }
+    header img {
+        display: none;
+    }
+    header nav {
+        width: 100%;
+    }
+    header nav a{
+        width: 16.6%;
+        padding: 20px 0;
+    }
+    section article{
+        padding: 15px 3%;
+    }
+    section img{
+        width: 85%;
+        margin: 0 auto;
+        float: none;
+        display: block;
+        margin-top: 20px;
+    }
+    section p, section h1{
+        width: 97%;
+    }
+    section h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    section p{
+        line-height: 25px;
+    }
+    .news i, .registration i, .login i{
+        font-size: 100px;
+    }
+    .news h1,.registration h1, .login h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .wrapper {
+        max-width: 90%;
+    }
+    header nav {
+        background-color: white;
+        position: absolute;
+        left: 0;
+    }
+    header nav a {
+        width: 85%;
+        padding: 15pX 0;
+        margin: 0 5%;
+        font-size: 15px;
+        text-align: left;
+    }
+    header nav a:hover{
+        border-radius: 30px;
+        padding-left: 3%;
+    }
+    #icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin-top: 11px;
+        cursor: pointer;
+    }
+    #icon span {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #FFBE00;
+        border-radius: 9px;
+        transition: 0.25s ease-in-out all;
+    }
+    #icon span:nth-child(1) {
+        top: 0;
+    }
+    #icon span:nth-child(2) {
+        top: 10px;
+    }
+    #icon span:nth-child(3) {
+        top: 20px;
+    }
+    #icon.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+    #icon.open span:nth-child(2) {
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    #icon.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+    .show {
+        position: fixed;
+        display: block;
+    }
+    .clear{
+        clear:both;
+    }
+    section img{
+        width: 70%;
+    }
+    section h1{
+        font-size: 20px;
+    }
+    section article:first-child{
+        padding: 20px 3%;
+        width: 94%;
+    }
+    .news i, .registration i, .login i{
+        font-size: 70px;
+    }
+    .news h1, .registration h1, .login h1{
+        font-size: 10vw;
+    }
+    .news input[type="submit"], .registration input[type="submit"], .login input[type="submit"]{
+        max-width: 200px;
+        font-size: 15px;
+    }
+    .administration button{
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+
+    }
+}
